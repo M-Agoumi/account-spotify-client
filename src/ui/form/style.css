@@ -16,14 +16,14 @@
 
 .form-control .input .form-input {
     padding: 10px;
-    border: 0px;
+    border: 0;
     display: block;
     font-size: 1rem;
     font-weight: 400;
     transition: box-shadow 0.1s ease-in-out, color 0.1s ease-in-out;
     inline-size: 100%;
     box-sizing: border-box;
-    margin-block: 0px;
+    margin-block: 0;
     border-radius: var(--encore-corner-radius-base, 4px);
     padding-inline-start: var(--encore-spacing-base, 16px);
     padding-inline-end: var(--encore-spacing-base, 16px);
@@ -54,7 +54,7 @@
     box-sizing: border-box;
     font-size: 1rem;
     font-weight: 650;
-    font-family: var(--font-family,CircularSp,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva, sans-serif);
+    font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, sans-serif), serif;
     border: 0;
     border-radius: 9999px;
     cursor: pointer;
@@ -70,7 +70,7 @@
     vertical-align: middle;
     transform: translate3d(0px, 0px, 0px);
     padding: 10px 25px;
-    min-inline-size: 0px;
+    min-inline-size: 0;
     align-self: center;
     inline-size: 100%;
     background-color: var(--background-highlight,#1fdf64);
@@ -82,7 +82,8 @@
     -moz-box-pack: justify;
     justify-content: space-between;
     margin-bottom: 32px;
-}m
+}
+
 .form .form-control .input .country-code{
     background: var(--background-base, #ffffff);
     border: none;
