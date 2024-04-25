@@ -1,15 +1,20 @@
 import './style.css';
 
-export default function EmailInput()
-{
+interface EmailInputProps {
+    placeholer?: string,
+    label?: string,
+    style?: string
+}
+
+export default function EmailInput({placeholer = "name@domain.com", label = "Email address", style = ''}: EmailInputProps) {
     return (
         <>
-            <div className="form-control">
+            <div className={'form-control' + (style && ' ' + style)}>
                 <label className="form-label">
-                    Email address
+                    {label}
                 </label>
                 <div className="input">
-                    <input className="form-input" type="email" name="email" placeholder="name@domain.com"/>
+                    <input className="form-input" type="email" name="email" placeholder={placeholer}/>
                 </div>
             </div>
         </>

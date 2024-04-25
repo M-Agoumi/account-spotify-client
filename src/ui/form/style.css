@@ -76,6 +76,7 @@
     background-color: var(--background-highlight,#1fdf64);
     color: var(--essential-base, #FFF);
 }
+
 .form .form-flex .input {
     display: flex;
     column-gap: 30px;

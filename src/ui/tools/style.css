@@ -1,4 +1,4 @@
-.signup .divider {
+.divider {
     position: relative;
     width: 100%;
     display: flex;
@@ -7,7 +7,7 @@
     margin: 32px 0;
 }
 
-.signup .divider::after {
+.divider::after {
     content: "";
     height: 1px;
     background-color: var(--essential-subdued, #878787);
@@ -18,12 +18,12 @@
     z-index: 1; /* Ensures that this is behind the span */
 }
 
-.signup .divider span {
+.divider span {
     padding: 5px 12px;
     position: relative;
     display: inline-block;
     background: var(--background-base, #ffffff);
-    margin-block: 0px;
+    margin-block: 0;
     color: inherit;
     z-index: 2; /* Higher z-index to ensure it's above the pseudo-element */
 }

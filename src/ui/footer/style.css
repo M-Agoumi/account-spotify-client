@@ -1,11 +1,21 @@
 .footer {
-    width: 338px;
-    margin: auto;
-    padding-top: 70px;
+    width: 100%;
+    padding: 25px 0;
+    margin-top: 30px;
     font-size: var(--encore-text-size-tiny);
     font-weight: 400;
-    text-align: center;
+    text-align: center; /* Text alignment for links remains center */
     color: var(--text-secondary);
+    display: flex;
+    justify-content: space-between;
+    background: var(--background-base);
+    align-items: center; /* Added to vertically center content */
+}
+
+.footer .footer-content {
+    width: 338px;
+    flex-grow: 1;
+    margin: auto;
 }
 
 .footer a {

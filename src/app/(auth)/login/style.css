@@ -12,3 +12,14 @@ body {
 .login-navbar {
     background: var(--background-base);
 }
+
+.login-box .header {
+    overflow-wrap: break-word;
+    font-size: 2.7rem;
+    font-weight: 700;
+}
+
+.form {
+    padding: 0 32px 30px;
+    width: 380px;
+}

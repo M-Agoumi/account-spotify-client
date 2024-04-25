@@ -1,8 +1,10 @@
-.signup .social-login {
+.social-login {
     margin-top: 32px;
+    text-align: center;
+    width: 320px;
 }
 
-.signup .social-login .social-links a {
+.social-login .social-links a {
     border: 1px solid var(--essential-subdued);
     padding: 12px 20px;
     display: block;
@@ -14,7 +16,7 @@
     font-size: var(--encore-text-size-smaller);
 }
 
-.signup .social-login .social-links a img {
+.social-login .social-links a img {
     display: inline;
     float: left;
     fill: var(--text-base, #FFF);
