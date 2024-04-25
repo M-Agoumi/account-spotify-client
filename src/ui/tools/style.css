@@ -1,0 +1,29 @@
+.signup .divider {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 32px 0;
+}
+
+.signup .divider::after {
+    content: "";
+    height: 1px;
+    background-color: var(--essential-subdued, #878787);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    z-index: 1; /* Ensures that this is behind the span */
+}
+
+.signup .divider span {
+    padding: 5px 12px;
+    position: relative;
+    display: inline-block;
+    background: var(--background-base, #ffffff);
+    margin-block: 0px;
+    color: inherit;
+    z-index: 2; /* Higher z-index to ensure it's above the pseudo-element */
+}

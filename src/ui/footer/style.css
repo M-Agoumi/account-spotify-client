@@ -1,0 +1,13 @@
+.footer {
+    width: 338px;
+    margin: auto;
+    padding-top: 70px;
+    font-size: var(--encore-text-size-tiny);
+    font-weight: 400;
+    text-align: center;
+    color: var(--text-secondary);
+}
+
+.footer a {
+    text-decoration: underline;
+}

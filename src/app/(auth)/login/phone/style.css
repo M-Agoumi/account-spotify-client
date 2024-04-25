@@ -1,0 +1,30 @@
+/** override default background color **/
+body {
+    background: var(--background-base, #f5f5f5);
+}
+
+.phone-login {
+
+}
+
+.phone-login .form {
+    flex: 3 1 0%;
+    display: flex;
+    flex-wrap: wrap;
+    -moz-box-pack: center;
+    justify-content: center;
+    padding: 32px;
+    background: var(--background-base,#ffffff);
+}
+
+.phone-login .button {
+    align-self: flex-start; /* Aligns the button to the start of the flex line */
+    width: 100%; /* Makes the button container take the full width */
+    display: flex; /* Allows for centering of the actual button */
+    justify-content: center; /* Centers the actual button */
+}
+
+.phone-login .button > button { /* Target the actual button element inside the .button container */
+    width: 220px; /* Set the button width to 250px */
+    margin-left: -25%; /* Moves the button 20% to the left from the center */
+}

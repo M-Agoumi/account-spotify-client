@@ -6,13 +6,33 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --main-color: 255, 255, 255;
+  --encore-text-size-tiny: 0.70rem;
+  --encore-text-size-smaller: 0.875rem;
+  --encore-text-size-bigger: 1.25rem;
+  --encore-text-size-larger: 2.75rem;
+  --essential-base: #fff;
+  --encore-corner-radius-base: 4px;
+  --encore-corner-radius-extra: 30px;
+  --encore-spacing-base: 16px;
+  --encore-spacing-tighter: 12px;
+  --encore-control-size-base: 48px;
+  --background-base: #121212;
+  --essential-subdued: #727272;
+  --text-secondary: #a7a7a7;
+  --text-base: #000;
+  --text-bright-accent: #1ed760;
+  --background-highlight: #1fdf64;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-end-rgb: 18, 18, 18;
+    --main-color-rgb: 255, 255, 255;
+    --text-base: #FFF;
+    --essential-base: #000;
   }
 }
 
@@ -24,6 +44,16 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  min-height: 100vh;
+}
+
+.flex-break {
+  flex-basis: 100%;
+  width: 0;
+}
+
+.text-large {
+  font-size: var(--encore-text-size-bigger) !important;
 }
 
 @layer utilities {

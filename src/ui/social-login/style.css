@@ -1,0 +1,22 @@
+.signup .social-login {
+    margin-top: 32px;
+}
+
+.signup .social-login .social-links a {
+    border: 1px solid var(--essential-subdued);
+    padding: 12px 20px;
+    display: block;
+    margin-top: 7px;
+    text-align: center;
+    border-radius: var(--encore-corner-radius-extra, 4px);
+    color: var(--text-base, #FFF);
+    font-weight: 700;
+    font-size: var(--encore-text-size-smaller);
+}
+
+.signup .social-login .social-links a img {
+    display: inline;
+    float: left;
+    fill: var(--text-base, #FFF);
+    color: var(--text-base);
+}

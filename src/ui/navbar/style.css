@@ -1,0 +1,8 @@
+main .navbar {
+    padding: 32px;
+}
+
+.logo {
+    fill: #fff;
+    stroke: transparent;
+}

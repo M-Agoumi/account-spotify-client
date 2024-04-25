@@ -1,0 +1,14 @@
+body {
+    color: rgb(var(--foreground-rgb));
+    background: linear-gradient(
+            to bottom,
+            transparent,
+            rgb(55, 55, 55)
+    )
+    rgb(var(--background-end-rgb));
+    min-height: 100vh;
+}
+
+.login-navbar {
+    background: var(--background-base);
+}
