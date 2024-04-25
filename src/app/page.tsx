@@ -1,22 +1,20 @@
 import Link from "next/link";
 import Navbar from "@/ui/navbar/navbar";
 import Hr from "@/ui/tools/hr";
+import Box from "@/ui/components/box";
 
 export default function Home() {
   return (
       <>
           <Navbar/>
-          <main className="flex min-h-screen flex-col items-center justify-between p-24">
-              <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-
-                  <div className="container">
-                      <h1>this is a WIP</h1>
-                      <Link href={"/login"}>login</Link>
-                      <Hr/>
-                      <Link href={"/signup"}>signup</Link>
-                  </div>
-              </div>
-          </main>
+          <Box classes="login-box min-w-min w-1/3 ">
+              <h1>this is a WIP</h1>
+              <h3>pages</h3>
+              <Hr/>
+              <Link href={"/signup"} className="underline">signup</Link>
+              <Link href={"/login"} className="underline">login</Link>
+              <Link href={"/login/phone"} className="underline">login phone</Link>
+          </Box>
       </>
   );
 }

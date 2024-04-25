@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Google from "./google-icon.svg";
 import Facebook from "./facebook-icon.svg";
 import Apple from "./apple-icon.svg";
+import Link from "next/link";
 
 interface SocialLoginProps {
     phone?: boolean
@@ -36,9 +37,9 @@ export default function SocialLogin({phone = false}: SocialLoginProps) {
                         />
                         Sign up with Apple
                     </a>
-                    {phone && <a href="#">
+                    {phone && <Link href="/login/phone">
                         Continue with phone number
-                    </a>}
+                    </Link>}
                 </div>
             </div>
         </>
