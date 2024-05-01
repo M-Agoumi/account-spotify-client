@@ -1,17 +1,13 @@
-:root {
-    --foreground-rgb: 0, 0, 0;
-    --background-start-rgb: 214, 219, 220;
-    --background-end-rgb: 255, 255, 255;
-    --main-color: 0, 0, 0;
-}
+.signup-body {
+    color: rgb(var(--foreground-rgb));
+    background: linear-gradient(
+            to bottom,
+            transparent,
+            rgb(18, 18, 18)
+        )
+        rgb(18, 18, 18);
+    min-height: 100vh;
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --foreground-rgb: 255, 255, 255;
-        --background-start-rgb: 18, 18, 18;
-        --background-end-rgb: 18, 18, 18;
-        --main-color-rgb: 255, 255, 255;
-    }
 }
 
 .signup {

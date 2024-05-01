@@ -10,26 +10,28 @@ import Link from 'next/link'
 export default function signup() {
     return (
         <>
-            <Navbar />
-            <div className="signup">
-                <header className="header">
-                    <h1>Sign up to start listening</h1>
-                </header>
-                <form className="form">
-                    <EmailInput/>
-                    <div className="phone-link">
-                        <Link href="/login/phone">Use phone number instead.</Link>
+            <div className="signup-body">
+                <Navbar />
+                <div className="signup">
+                    <header className="header">
+                        <h1>Sign up to start listening</h1>
+                    </header>
+                    <form className="form">
+                        <EmailInput/>
+                        <div className="phone-link">
+                            <Link href="/login/phone?intent=signup">Use phone number instead.</Link>
+                        </div>
+                        <Button/>
+                    </form>
+                    <Hr text="or"/>
+                    <SocialLogin />
+                    <Hr />
+                    <div className="login-link">
+                        Already have an account? <Link href="/login">Log in here</Link>.
                     </div>
-                    <Button/>
-                </form>
-                <Hr text="or"/>
-                <SocialLogin />
-                <Hr />
-                <div className="login-link">
-                    Already have an account? <Link href="/login">Log in here</Link>.
                 </div>
+                <Footer />
             </div>
-            <Footer />
         </>
     );
 }

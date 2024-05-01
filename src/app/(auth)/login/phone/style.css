@@ -19,12 +19,11 @@ body {
 
 .phone-login .button {
     align-self: flex-start; /* Aligns the button to the start of the flex line */
-    width: 100%; /* Makes the button container take the full width */
+    width: 378px; /* Makes the button container take the full width */
     display: flex; /* Allows for centering of the actual button */
     justify-content: center; /* Centers the actual button */
 }
 
 .phone-login .button > button { /* Target the actual button element inside the .button container */
     width: 220px; /* Set the button width to 250px */
-    margin-left: -25%; /* Moves the button 20% to the left from the center */
 }

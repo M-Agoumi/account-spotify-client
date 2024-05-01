@@ -11,9 +11,9 @@ export default function Home() {
               <h1>this is a WIP</h1>
               <h3>pages</h3>
               <Hr/>
-              <Link href={"/signup"} className="underline">signup</Link>
-              <Link href={"/login"} className="underline">login</Link>
-              <Link href={"/login/phone"} className="underline">login phone</Link>
+              <Link href="/signup" className="underline underline-offset-8 mb-4">signup</Link>
+              <Link href="/login" className="underline underline-offset-8 mb-4">login</Link>
+              <Link href="/login/phone" className="underline underline-offset-4">login phone</Link>
           </Box>
       </>
   );

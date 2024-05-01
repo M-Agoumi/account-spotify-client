@@ -12,32 +12,35 @@ import ToggleInput from "@/ui/form/toggle-input";
 import Footer from "@/ui/footer/footer";
 
 export const metadata: Metadata = {
-    title: "Log in to Spotify"
+  title: "Log in to Spotify"
 };
 
 export default function login() {
-    return (
-        <>
-            <Navbar classes="login-navbar" logoHeight="42"/>
-            <Box classes="login-box min-w-min    w-1/3 ">
-                <header className="header">
-                    <h1>Log in to Spotify</h1>
-                </header>
-                <SocialLogin phone={true}/>
-                <Hr width={320}/>
-                <form className="form">
-                    <EmailInput placeholer="Email or username" label="Email or username" style='mb-5'/>
-                    <PasswordInput style='mb-2'/>
-                    <ToggleInput style='mb-5'/>
-                    <Button text={"log In"} marginBlockStart="0"/>
-                </form>
-                <Link href="#" className="underline underline-offset-1">Forgot your password?</Link>
-                <Hr width={320} />
-                <div className="signup-link">
-                    Don&apos;t have an account? <Link href="/signup" className="underline underline-offset-1">Sign up for Spotify</Link>.
-                </div>
-            </Box>
-            <Footer/>
-        </>
-    );
+  return (
+      <>
+        <div className="login-body">
+          <Navbar classes="login-navbar" logoHeight="42"/>
+          <Box classes="login-box min-w-min    w-1/3 ">
+            <header className="header">
+              <h1>Log in to Spotify</h1>
+            </header>
+            <SocialLogin phone={true}/>
+            <Hr width={320}/>
+            <form className="login-form">
+              <EmailInput placeholer="Email or username" label="Email or username" style='mb-5'/>
+              <PasswordInput style='mb-2'/>
+              <ToggleInput style='mb-5'/>
+              <Button text={"log In"} marginBlockStart="0"/>
+            </form>
+            <Link href="#" className="underline underline-offset-1">Forgot your password?</Link>
+            <Hr width={320}/>
+            <div className="signup-link">
+              Don&apos;t have an account? <Link href="/signup" className="underline underline-offset-1">Sign
+              up for Spotify</Link>.
+            </div>
+          </Box>
+          <Footer/>
+        </div>
+      </>
+  );
 }
