@@ -1,5 +1,4 @@
 .container {
-    background-color: var(--background-base,#ffffff);
     color: white;
     row-gap: normal;
     border-radius: 8px;
@@ -8,5 +7,4 @@
     flex-direction: column;
     margin: 20px auto;
     flex-wrap: wrap;
-    align-items: center;
 }

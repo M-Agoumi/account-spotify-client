@@ -8,7 +8,6 @@
     color: var(--text-secondary);
     display: flex;
     justify-content: space-between;
-    background: var(--background-base);
     align-items: center; /* Added to vertically center content */
 }
 

@@ -18,16 +18,16 @@ export const metadata: Metadata = {
 export default function login() {
   return (
       <>
-        <div className="login-body">
+        <div className="login-body bg-regal-blue">
           <Navbar classes="login-navbar" logoHeight="42"/>
-          <Box classes="login-box min-w-min    w-1/3 ">
+          <Box classes="login-box min-w-min items-center w-1/3 bg-site-base-gray">
             <header className="header">
               <h1>Log in to Spotify</h1>
             </header>
             <SocialLogin phone={true}/>
             <Hr width={320}/>
             <form className="login-form">
-              <EmailInput placeholer="Email or username" label="Email or username" style='mb-5'/>
+              <EmailInput placeholder="Email or username" label="Email or username" style='mb-5'/>
               <PasswordInput style='mb-2'/>
               <ToggleInput style='mb-5'/>
               <Button text={"log In"} marginBlockStart="0"/>
