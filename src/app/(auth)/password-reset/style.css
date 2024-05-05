@@ -1,0 +1,13 @@
+.reset-password-body {
+    background: rgb(19,19,19);
+}
+
+.reset-password-box {
+    background: rgb(19,19,19);
+}
+
+.reset-password-box h1 {
+    color: white;
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+}
