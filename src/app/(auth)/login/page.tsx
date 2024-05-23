@@ -32,7 +32,7 @@ export default function login() {
               <ToggleInput style='mb-5'/>
               <Button text={"log In"} marginBlockStart="0"/>
             </form>
-            <Link href="#" className="underline underline-offset-1">Forgot your password?</Link>
+            <Link href="/password-reset" className="underline underline-offset-1">Forgot your password?</Link>
             <Hr width={320}/>
             <div className="signup-link">
               Don&apos;t have an account? <Link href="/signup" className="underline underline-offset-1">Sign
