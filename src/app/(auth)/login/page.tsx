@@ -36,7 +36,7 @@ export default function login() {
             <Hr width={320}/>
             <div className="signup-link">
               Don&apos;t have an account? <Link href="/signup" className="underline underline-offset-1">Sign
-              up for Spotify.</Link>.
+              up for Spotify</Link>.
             </div>
           </Box>
           <Footer/>
